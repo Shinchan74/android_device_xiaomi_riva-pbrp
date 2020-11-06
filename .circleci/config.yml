@@ -32,7 +32,6 @@ jobs:
             source build.sh
 workflows:
   version: 2
-  build_and_test:
+  build_and_test:global
     jobs:
-      - build:
-          context: org-global
+      - build
